@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: frontend-ui
-        image: ghcr.io/elzabeth-l/final-capsule:latest
+        image: iyask/ai-service
         ports:
         - containerPort: 80
 
