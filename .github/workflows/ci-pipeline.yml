@@ -222,10 +222,10 @@ jobs:
           format: "table"
           exit-code: "1"
           ignore-unfixed: true
-          vuln-type: "os,library"
+          vuln-type: "os,library" 
           severity: "CRITICAL,HIGH"
 
-      - name: Send email on failure
+      - name: Send email on failure 
         if: failure()
         uses: dawidd6/action-send-mail@v3
         with:
@@ -238,9 +238,9 @@ jobs:
           from: GitHub Actions
           body: "The Trivy image scan failed for ${{ matrix.service }}. High or critical vulnerabilities were found."
 
-  # ---------------------------------------------------------
+  # ----------------------------------------------------------
   # Docker Push
-  # ---------------------------------------------------------
+  # ----------------------------------------------------------
   docker_push:
     name: "Docker Push (${{ matrix.service }})"
     needs: [prepare, docker_build, image_scan]
