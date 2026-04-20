@@ -5,4 +5,5 @@ metadata:
 provisioner: k8s-sigs.io/nfs-subdir-external-provisioner # standard nfs provisioner name
 parameters:
   pathPattern: "${.PVC.namespace}/${.PVC.annotations.nfs.io/storage-path}"
+  server: 13.201.227.90
   onDelete: retain
