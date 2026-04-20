@@ -2,7 +2,7 @@
 # FRONTEND DEPLOYMENTS (Standard Deployments)
 # =============================================
 apiVersion: apps/v1
-kind: Rollout
+kind: Deployment
 metadata:
   name: api-gateway
   namespace: {{ .Values.global.namespace }}
