@@ -6,7 +6,7 @@ api-gateway:
     repository: "team4devops/ecommerce-api-gateway"
     tag: "v1.0.0"
 frontend-ui:
-  replicas: 2
+  replicas: 1
   image:
     repository: "team4devops/ecommerce-frontend-ui"
     tag: "v1.0.0"
