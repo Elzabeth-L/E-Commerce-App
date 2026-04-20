@@ -6,4 +6,5 @@ provisioner: k8s-sigs.io/nfs-subdir-external-provisioner # standard nfs provisio
 parameters:
   pathPattern: "${.PVC.namespace}/${.PVC.annotations.nfs.io/storage-path}"
   server: 13.201.227.90
+  share: /var/nfs/general
   onDelete: retain
