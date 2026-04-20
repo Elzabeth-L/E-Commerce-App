@@ -8,7 +8,7 @@ api-gateway:
 frontend-ui:
   replicas: 2
   image:
-    repository: "iyask/ai-service"
+    repository: "team4devops/ecommerce-frontend-ui"
     tag: "v1.1.1"
 user-service:
   replicas: 1
