@@ -117,5 +117,5 @@ spec:
         type: PathPrefix
         value: /
     backendRefs:
-    - name: frontend-ui
+    - name: frontend-active
       port: 80
